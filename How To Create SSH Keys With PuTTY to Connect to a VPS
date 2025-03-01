@@ -30,7 +30,7 @@ If your SSH folder does not yet exist, create it manually:
 mkdir ~/.ssh chmod 0700 ~/.ssh touch ~/.ssh/authorized_keys chmod 0644 ~/.ssh/authorized_keys
 
 Paste the SSH public key into your ~/.ssh/authorized_keys file
-sudo vim ~/.ssh/authorized_keys
+sudo vi ~/.ssh/authorized_keys
 
     Tap the i key on your keyboard & right-click your mouse to paste.
     To save, tap the following keys on your keyboard (in this order): Esc, :, w, q, Enter.
@@ -56,7 +56,7 @@ Now you can go ahead and log in to user@1.2.3.4 and you will not be prompted for
 Disable Username/Password Logins
 
 Once you have verified that your key-based logins are working, you may elect to disable username/password logins to achieve better security. To do this, you need to edit your SSH server's configuration file. On Debian/ Ubuntu systems, this file is located at /etc/ssh/sshd_config.
-sudo vim /etc/ssh/sshd_config
+sudo vi /etc/ssh/sshd_config
 
 Tap the i key on your keyboard and edit the lines, referenced below:
 
