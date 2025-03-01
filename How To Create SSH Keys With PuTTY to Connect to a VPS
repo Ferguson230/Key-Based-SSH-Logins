@@ -58,6 +58,10 @@ Disable Username/Password Logins
 Once you have verified that your key-based logins are working, you may elect to disable username/password logins to achieve better security. To do this, you need to edit your SSH server's configuration file. On Debian/ Ubuntu systems, this file is located at /etc/ssh/sshd_config.
 sudo vi /etc/ssh/sshd_config
 
+If the config file above has Include /etc/ssh/sshd_config.d/*.conf in it, then make the changes there.
+
+sudo vi /etc/ssh/sshd_config.d/*.conf
+
 Tap the i key on your keyboard and edit the lines, referenced below:
 
 [...] PasswordAuthentication no [...] UsePAM no [...]
